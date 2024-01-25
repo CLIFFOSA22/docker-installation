@@ -1,0 +1,8 @@
+
+sudo docker stop $(sudo docker ps -aq) – Stops all running Docker containers.
+sudo apt-get purge docker-ce docker-ce-cli containerd.io – Removes Docker packages.
+sudo rm -rf /var/lib/docker – Deletes Docker configurations, images, and volumes.
+sudo apt-get autoremove – Removes unused dependencies.
+sudo apt-key del $(sudo apt-key list | grep Docker | awk ‘{print $2}’) – Removes Docker’s GPG key.
+
+above will uninstall docker
